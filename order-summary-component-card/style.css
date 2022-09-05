@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(224,232,255,255);
+}
+
+.container {
+    background-color: white;
+    width: 350px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.img-container img {
+    width:100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.info-container {
+    padding: 20px;
+    padding-bottom: 0;
+    margin: 5px 20px;
+}
+
+.info-container h1 {
+    font-size: 20px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 10px;
+}
+
+.info-container p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+.annual-plan-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin:  20px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+
+.annual-plan-info .plan-info ul {
+    padding-right: 35px;
+}
+
+.annual-plan-info .plan-info li {
+    list-style: none;
+}
+
+.plan-info-name {
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan-info-price {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.annual-plan-info a {
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+    text-decoration: none;
+}
+
+.annual-plan-info a:hover {
+    color: #766cf1;
+}
+
+.buttons button {
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 15px;
+    width: 300px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.payment-button {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+
+.payment-button:hover {
+    background-color: #766cf1;
+}
+
+.cancel-button {
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    background-color: white;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
