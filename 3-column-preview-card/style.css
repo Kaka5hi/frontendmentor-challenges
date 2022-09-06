@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@200;400;700&family=Lexend+Deca:wght@100;200;400&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+    background-color: hsl(0, 0%, 90%);
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.first-card-container, .second-card-container, .third-card-container {
+    padding: 25px;
+    color: hsl(0, 0%, 95%); 
+}
+
+.first-card-container, .first-card-container button {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.second-card-container, .second-card-container button {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third-card-container, .third-card-container button {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.logo {
+    padding: 10px 20px 10px 10px;
+}
+
+.card-heading {
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 10px 20px 10px 10px;
+    font-weight: 700;
+}
+
+.card-paragraph {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 20px 10px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+.card-button {
+    padding: 40px 20px 10px 10px;
+}
+
+.card-button button {
+    padding: 10px 25px;
+    font-size: 14px;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 25px;
+    border: 1px solid white;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+.first-card-container button:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+.second-card-container button:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+}
+.third-card-container button:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        padding: 10px;
+        height: 100%;
+    }
+    .container {
+        width: 300px;
+        flex-direction: column;
+    }
+    .first-card-container, .second-card-container, .third-card-container {
+        padding: 35px;
+    }
+
+    .card-button {
+        padding: 10px 0 5px 0;
+    }
+}
