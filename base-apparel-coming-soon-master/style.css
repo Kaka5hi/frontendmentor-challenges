@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+:root {
+    --main-heading-dark-color: hsl(0, 6%, 24%);
+    --main-heading-light-color: hsl(0, 36%, 70%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(
+		135deg,
+		hsl(0, 0%, 100%),
+		hsl(0, 100%, 98%)
+	);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+}
+
+.left-side {
+    width: 60%;
+    padding: 0 40px 40px;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.inner-container {
+    max-width: 450px;
+    margin: auto;
+}
+
+.logo {
+    margin: 60px 0;
+    width: 200px;
+}
+
+.mobile-background-img {
+    display: none;
+}
+
+h1 {
+    letter-spacing: 10px;
+    line-height: 1.1;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: var(--main-heading-dark-color);
+    margin-bottom: 0;
+}
+
+h1 span {
+    font-weight: 200;
+    color: var(--main-heading-light-color);
+}
+
+p {
+    font-size: 16px;
+    color: var(--main-heading-light-color);
+    line-height: 26px;
+    margin: 30px 0;
+}
+
+form {
+    position: relative;
+}
+
+input {
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    border: 1px solid hsl(0, 80%, 86%);
+    padding: 15px 30px;
+    width: 100%;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 16px;
+    height: 55px;
+}
+
+input::placeholder {
+    color: var(--main-heading-light-color);
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px hsla(0, 36%, 70%, 0.5);
+    border-width: 2px;
+}
+
+
+form.error input {
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+button {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 55px;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%));
+    box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+}
+
+.error-icon {
+    position: absolute;
+    top: 15px;
+    right: 110px;
+    display: none;
+}
+
+form.error .error-icon {
+    display: block;
+}
+
+small {
+    display: none;
+    margin: 15px 0 0 30px;
+    color: hsl(0, 93%, 68%);
+}
+
+form.error small {
+    display: block;
+}
+
+.right-side {
+    width: 40%;
+}
+
+.bg-image {
+    background-image: url(./images/hero-desktop.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+@media screen and (max-width:600px) {
+    .logo {
+		margin: 30px 0;
+		width: 100px;
+	}
+
+    .mobile-background-img {
+        display: block;
+        width: calc(100% + 80px);
+        margin-left: -40px;
+        margin-right: -40px;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+		font-size: 40px;
+        text-align: center;
+	}
+
+    p {
+        text-align: center;
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .right-side {
+        display: none;
+    }
+}
