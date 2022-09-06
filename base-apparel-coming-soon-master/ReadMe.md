@@ -32,7 +32,7 @@ Users should be able to:
 
 ## My process
 
-I always start with deciding how many sections I need to build the layout, then divide those sections in divs(block level elements in HTML) which makes the work easy. I prefer writing whole HTML first and then jumping on CSS because it provide structure visually and makes styling easy. For CSS part basic stuff first like - importing fonts/icons asap, set some default styling. I'm quite comfortable with Flexbox, so use that most of the times, but I can also achieve the same layout with Grid as well. My approach is simple if their are 2-3 sections side by side I can easily adjust them using flexbox and if they exceeds in number I prefer using Grid.
+I always start with deciding how many sections I need to build the layout, then divide those sections in divs(block level elements in HTML) which makes the work easy. I prefer writing whole HTML first and then jumping on CSS because it provides visual structure and makes styling easy. For CSS part basic stuff first like - importing fonts/icons asap, set some default styling. I'm quite comfortable with Flexbox, so use that most of the times, but I can also achieve the same layout with Grid as well. My approach is simple if design/layout is simple use Flexbox else Grid.
 
 ### Built with
 
