@@ -1,0 +1,137 @@
+/* Heading Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Body Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* Reset everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.logo-image img{
+    width: 200px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.left-section img {
+    width: 100%;
+}
+
+.right-section {
+    flex: 1;
+    color: #fff;
+}
+
+.right-section h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.right-section p {
+    word-spacing: 2px;
+    font-family: 'Open sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.right-section button {
+    padding: 10px;
+    width: 180px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    color: hsl(257, 40%, 49%);
+    background-color: #fff;
+    font-family:'Poppins', sans-serif;
+    box-shadow: 0px 0px 10px rgba(1, 0, 3, 0.7);
+}
+
+.right-section button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.social-media-links a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.social-media-links a i:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+
+@media screen and (max-width: 800px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .right-section {
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .right-section button {
+        margin: 0 auto;
+    }
+
+    .social-media-links {
+        justify-content: center;
+    }
+}
