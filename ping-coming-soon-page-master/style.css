@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+/* font-family: 'Libre Franklin', sans-serif; */
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.wrapper {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo h1 {
+    color: hsl(209, 33%, 12%);
+}
+
+.logo h1 span {
+    color: hsl(223, 87%, 63%);
+}
+
+.main-heading h1 {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.main-heading h1 span {
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+
+.main-heading p {
+    font-size: 15px;
+    color: hsl(209, 33%, 12%);
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.form {
+    padding: 25px 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.email-container {
+    min-width: 70%;
+}
+
+.email-value {
+    min-width: 100%;
+    border: 1px solid hsl(223, 100%, 88%);
+    position: relative;
+    padding: 15px;
+    font-family: inherit;
+    border-radius: 50px;
+}
+
+.error-message {
+    position: absolute;
+    color: hsl(354, 100%, 66%);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    display: none;
+    padding: 5px 15px;
+}
+
+form.error-message-show .error-message{
+    display: block;
+}
+
+.submit-button {
+    min-width: 30%;
+}
+/* main button */
+.submit-button button{
+    min-width: 100%;
+    padding: 15px;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    color: #fff;
+    font-family: inherit;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.form button:hover {
+    background-color: hsl(223, 90%, 73%);
+    cursor: pointer;
+    box-shadow: 1px 2px 7px 0px #999999;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.icons ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons ul li {
+    margin: 0 10px;
+}
+
+.icons ul li a {
+    border: 1px solid hsl(0, 0%, 87%);
+    padding: 10px;
+    color: hsl(223, 87%, 63%);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons ul li a:hover {
+    border: none;
+    color: #fff;
+    background-color: hsl(223, 90%, 73%);
+}
+
+footer {
+    color: hsl(0, 0%, 59%);
+    padding: 10px 0;
+}
+
+@media screen and (max-width:700px) {
+    .form {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .email-container {
+        width: auto;
+        padding-bottom: inherit;
+    }
+}
+
