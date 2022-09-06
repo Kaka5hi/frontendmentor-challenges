@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://base-apparel-coming-soon-master-sm.netlify.app
 
 ## My process
 
@@ -56,9 +56,7 @@ I always start with deciding how many sections I need to build the layout, then 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- LinkedIn - [Add your name here](https://www.your-site.com)
-
+- LinkedIn - https://www.linkedin.com/in/sushant-mehra-devfy2022
 
 ## Special Mention
 
