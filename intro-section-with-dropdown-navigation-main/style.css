@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+/* font-family: 'Epilogue', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.navbar {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*space for the links in the navbar*/
+.nav-links .first-section>li,
+.nav-links .second-section>li{
+    padding: 10px;
+    margin: 0 5px;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    padding: 5px;
+    font-size: 14px;
+}
+
+.nav-links li a:hover{
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+}
+
+.first-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.features{
+    position: relative;
+}
+
+/* for centering the arrows on feature */
+.features a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* for the arrows */
+.arrow-up, 
+.arrow-down {
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+/* By defualt the arrow down will be displayed */
+.features a 
+.arrow-down{
+    display: block;
+}
+
+/* when hover over the nav links arrow will switch */
+.first-section>li:hover 
+.arrow-up{
+    display: block;
+}
+
+.first-section>li:hover 
+.arrow-down{
+    display: none;
+}
+
+/*Dropdown menu styling*/
+.drop-down {
+    position: absolute;
+    right: 0;
+    box-shadow: 0px 0px 10px -1px grey;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    display: none;
+    background-color: white;
+}
+
+/* Drowpdown will be displayed and arrow down whill change to arrow up */ 
+.first-section>li:hover 
+.drop-down{
+    display: block;
+}
+
+/* Drowpdown list items */
+.drop-down ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.drop-down ul li a{
+    margin: 5px;
+}
+.second-section {
+    display: flex;
+    align-items: center;
+}
+
+.register {
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 12px;
+}
+
+.register:hover {
+    border: 2px solid hsl(0, 0%, 8%);
+}
+
+.content-section {
+    display: flex;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left-side-content{
+    width: 420px;
+    margin: auto;
+}
+
+.left-side-content h1 {
+    font-size: 4em;
+    padding-bottom: 20px;
+    color: hsl(0, 0%, 8%);
+}
+
+.left-side-content p {
+    font-size: 14px;
+    color: hsl(0, 0%, 41%);
+    width: 400px;
+    line-height: 1.3em;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.left-side-content button {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    padding: 12px 24px;
+    font-family: inherit;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.brands-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.brands-logo img {
+    /* width: 100px; */
+    margin: 10px;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Hero image in the content section */
+.right-side img{
+    width: 400px;  
+}
